@@ -1,0 +1,17 @@
+AppDevMain.py - this is the Main file, this file contains all the code necessary to run the project.
+
+AppDevGUI.py, help.py, version.py - these files are all class files that define the GUI for the windows and Dialog boxes
+
+appDevGui.ui, help.ui, version,ui - these files are the generic output files from Qt5 designer
+
+
+To run the example you just need the Python files not the UI files
+run with 'python .\AppDevMain.py'
+
+
+to convert the *.ui files into python files you must have Qt5 designer installed
+- locate the install path
+- open a terminal at that path
+- run .\pyuic5.bat -o <location of output> <location of input>
+    - <location of output> is the location you want your .py file saved
+    - <location of input> is the location you have saved your .ui file
