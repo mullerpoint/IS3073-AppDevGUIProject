@@ -123,7 +123,6 @@ class AppDevProgram(QtWidgets.QMainWindow, Ui_MainWindow):
             # return success file
             return 1
 
-    # noinspection PyMethodMayBeStatic
     def quit(self):
         sys.exit(app.exec())
 
@@ -290,18 +289,17 @@ class AppDevProgram(QtWidgets.QMainWindow, Ui_MainWindow):
 # Main Function
 #
 ##########################################################
-def main():
-    # Start a new QApplication instance
-    app = QtWidgets.QApplication(sys.argv)
 
-    # Set the application design/form/template to use
-    form = AppDevProgram()
+# Start a new QApplication instance
+app = QtWidgets.QApplication(sys.argv)
 
-    # Show the form
-    form.show()
+# Set the application design/form/template to use
+form = AppDevProgram()
 
-    # Start the application/GUI loop
-    sys.exit(app.exec_())
+# Show the form
+form.show()
+
+# Start the application/GUI loop
+sys.exit(app.exec_())
 
 
-if __name__ == '__main__': main()
